@@ -1,0 +1,114 @@
+.GroupBox-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    z-index: 2;
+    background: #0000003d;
+}
+
+.GroupBox{
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+.GroupBox-member-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+.GroupBox hr{
+    width: 100%;
+}
+.GroupBox-member-list div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 3px;
+    background-color: #0083af;
+    border-radius: 5px;
+    color: white;
+    cursor: default;
+}
+.remove-member-btn{
+    cursor: pointer;
+    color: rgb(190, 190, 190);
+}
+.remove-member-btn:hover{
+    color: white;
+}
+.GroupBox-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.GroupBox-input-container div{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    gap: 5px;
+}
+.GroupBox-input-container input{
+    padding: 5px;
+}
+
+.GroupBox-btn-container{
+    align-self: flex-end;
+    display: flex;
+    gap: 5px;
+}
+.GroupBox-btn{
+    border: none;
+    background-color: #176B87;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 100ms;
+    border-radius: 3px;
+}
+.close-btn:hover{
+    background-color: #D11A2A ;
+}
+.create-btn:hover{
+    background-color: white;
+    color: black;
+}
+.searched-item-container{
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.652);
+    border-radius: 5px;
+    overflow-y: scroll;
+    max-height: 100px;
+}
+.searched-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+.searched-item:hover{
+    background-color: rgba(255, 255, 255, 0.733);
+}
+
+.searched-item img{
+    width: 50px;
+    border-radius: 50%;
+}

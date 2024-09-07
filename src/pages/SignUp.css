@@ -1,0 +1,106 @@
+.sign-container{
+    width: 100%;
+    background-color: #0a2351;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.sign-container>h1{
+    color: white;
+    position: absolute;
+    top: 0px;
+    padding-top: 20px;
+}
+
+.sign-form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 40px 20px;
+    background-color: white;
+}
+.sign-form input{
+    border: 2px solid #00308F;
+    padding: 0px 5px;
+    height: 45px;
+    width: 75%;
+    border-radius: 3px;
+    font-size: 15px;
+}
+hr{
+    width: 50%;
+}
+.sign-btn{
+    cursor: pointer;
+    background-color: #00308F;
+    color: white;
+    transition: all 200ms;
+}
+.sign-btn:hover{
+    border-radius: 50px;
+    background-color: rgb(229, 229, 229);
+    color: black;
+}
+
+.sign-bottom{
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.sign-using{
+    cursor: pointer;
+    color: rgb(0, 0, 177);
+}
+.pic-selector-container{
+    width: 75%; 
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+    font-size: 15px;
+}
+#pic-selector{
+    display: none;  
+}
+.upload-icon{
+    font-size: 30px;
+    margin-right: 100px;
+    color: white;
+    background-color: #00308F;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media(width<=800px){
+    .sign-form{
+        width: 60%;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+    .upload-icon{
+        margin-right: 70px;
+    }
+}
+
+@media(width<=500px){
+    .sign-form{
+        width: 90%;
+        gap: 15px;
+        padding: 20px 10px;
+        margin-bottom: 100px;
+        border-radius: 5px;
+    }
+    .upload-icon{
+        margin-right: 0px;
+    }
+    .sign-container>h1{
+        margin-top: 30px;
+    }
+}

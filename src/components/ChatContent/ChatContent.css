@@ -1,0 +1,129 @@
+.chat-container{
+
+    height: calc(100vh - 60px);
+    display: grid;
+    grid-template-columns: 2.5fr 7.5fr;
+    transition: all 100ms;
+}
+
+.sidebar{
+    background: #86B6F6;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 10px;
+    padding: 0px 10px 10px 10px;
+}
+
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    color: #176B87;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.sidebar-header p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#create-group-btn{
+    /* width: 160px; */
+    place-self: center;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #176B87;
+    color: white;
+    font-size: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 200ms;
+    padding: 5px;
+}
+
+#create-group-btn:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.contact-list{
+    background-color: white;
+    height: calc(100vh - 160px);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.contact-list::-webkit-scrollbar {
+    width: 5px;
+}
+   
+.contact-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+.contact-list::-webkit-scrollbar-thumb {
+    background: rgb(141, 141, 141);
+    border-radius: 50px;
+}
+
+.contact-item{
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px;
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+}
+.contact-item:hover{
+    background-color: rgb(232, 232, 232);
+}
+.contact-item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* chatbox-css starts here */
+
+.ChatBox-container{
+    border-radius: 5px;
+    background-color: rgb(225, 225, 225);
+}
+
+@media (width <= 1250px ) {
+    .sidebar-header p{
+        font-size: 17px;
+    }
+    #create-group-btn{
+        font-size: 13px;
+    }
+}
+
+@media(width<=600px){
+    .chat-container{
+        grid-template-columns: 1fr;
+    }
+    #show{
+        display: flex;
+        gap: 20px;
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        position: absolute;
+        left: 0px;
+    }
+    #not-show{
+        display: none;
+    }
+    .show-contact{
+        display: flex;
+    }
+}

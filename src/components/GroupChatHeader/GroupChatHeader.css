@@ -1,0 +1,12 @@
+.ChatBox-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#groupEdit-btn{
+    cursor: pointer;
+    margin-right: 30px;
+    font-size: 25px;
+}

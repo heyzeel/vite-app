@@ -1,0 +1,46 @@
+.EditGroupBox{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color:#ffffffd9;
+    gap: 10px;
+    border-radius: 5px;
+}
+.EditGroupBox-title{
+    background-color: rgb(220, 220, 220);
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.EditGroupBox-member-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+svg{
+    cursor: pointer;
+}
+.EditGroupBox-bottom{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 5px;
+}
+
+.EditGroupBox-bottom input{
+    height: 30px;
+}
+
+.searched-user-container{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 100px;
+    overflow-y: scroll;
+    background-color: rgb(227, 227, 227);
+}
+
+.searched-user-container div:hover{
+    background-color: rgb(216, 216, 216);
+}
